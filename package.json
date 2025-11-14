@@ -1,0 +1,17 @@
+{
+  "name": "lab6-header-exchange",
+  "version": "1.0.0",
+  "description": "RabbitMQ Header Exchange - CDN Request Router",
+  "main": "request-publisher.js",
+  "scripts": {
+    "publisher": "node request-publisher.js",
+    "image-handler": "node image-handler.js",
+    "video-handler": "node video-handler.js",
+    "premium": "node premium-processor.js",
+    "mobile": "node mobile-processor.js",
+    "regional": "node regional-router.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.3"
+  }
+}
